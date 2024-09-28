@@ -1,6 +1,7 @@
 # Credit risk scoring for an online lending company
 
-[![Esta es una imagen](/01_Documents/00_Images/webapp2.png)](https://03-notebooks03-systemapp-risk-scoring-deploymentapp-ri-cv1jfo.streamlitapp.com/)
+<img width="1018" alt="project_file1" src="https://github.com/user-attachments/assets/6331b400-f8c0-43ba-b342-e874eb2e0d3c">
+
 
 - [Introduction](#introduction)
 - [Objectives](#objectives)
@@ -16,7 +17,7 @@ The client is an online platform which specialises in lending various types of l
 
 When the company receives a loan application, the company has to make a decision for loan approval based on the applicant’s profile. Like most other lending companies, lending loans to ‘risky’ applicants is the largest source of financial loss. The company aims to identify such ‘risky’ applicants and their associated loan’s expected loss in order to utilise this knowledge for managing its economic capital, portfolio and risk assessment.
 
-- [See a detailed technical explanation of the project here.](https://pedrocorma.github.io/project/1riskscoring/)
+- [Checkout Website here. Play with website for exploaration] ([https://03-notebooks03-systemapp-risk-scoring-deploymentapp-ri-cv1jfo.streamlit.app/](https://03-notebooks03-systemapp-risk-scoring-deploymentapp-ri-cv1jfo.streamlit.app/)
 
 ## Objectives <a name="objectives"></a>
 Creating an advanced analytical asset based on machine learning predictive models to estimate the expected financial loss of each new customer-loan binomial.
