@@ -52,47 +52,6 @@ Finally, in order to get the most value out of the developed machine learning mo
 - In general, 60-month loans tend to have a higher percentage of late payments and charge-offs.
 - The percentage of loans charged off for ‘moving’ and ‘small business’ purposes is slightly higher (16%-17%) than the average for the rest of loan purposes (around 11%).
 
-## Project structure <a name="project-structure"></a>
-- :file_folder: 01_Documents
-  - Contains basic project files:
-    - `Feature_dictionary.xlsx`: feature-level metadata.
-    - `pf_riskscoring.yml`: project environment file.
-    - `Development stage_Data Transformation Design.xlsx`: support file for designing feature transformation processes.
-    - `Production stage_Processes Design`: support file for designing final production script.
-  - :file_folder: 00_Images: Contains project images.
-- :file_folder: 02_Data
-  - :file_folder: 01_Originals
-    - `Loans.csv`: Original dataset.
-  - :file_folder: 02_Validation
-    - `validation.csv`: Sample extracted from the original dataset at the beginning of the project in order to be used to check the correct performance of the model once it is put into production.
-  - :file_folder: 03_Work
-    - This folder contains the datasets resulting from each of the stages of the project (data quality, exploratory data analysis, feature transformation...).
-- :file_folder: 03_Notebooks
-  - :file_folder: 02_Development
-    - `00_Project Design.ipynb`: Notebook compiling the initial design of the project.
-    - `01_Set Up.ipynb`: Notebook used for the initial set up of the project.
-    - `02_Data Quality.ipynb`: Notebook detailing and executing all data quality processes.
-    - `03_EDA.ipynb`: Notebook used for the execution of the exploratory data analysis and which collects the business insights found.
-    - `04_Feature Transformation.ipynb`: Notebook that details and executes the data transformation processes necessary to prepare the features for input into the models.
-    - `05_Supervised Classification Modelling PD.ipynb`: Notebook for modelling the predictive probability of default model. Model selection, hyperparameterisation and evaluation of results.
-    - `06_Supervised Regression Modelling EAD.ipynb`: Notebook for modelling the predictive exposure at default model. Model selection, hyperparameterisation and evaluation of results.
-    - `07_Supervised Regression Modelling LGD.ipynb`: Notebook for modelling the predictive loss given default model. Model selection, hyperparameterisation and evaluation of results.
-    - `08_Production Code Preparation.ipynb`: Notebook used to compile all the quality, transformation as well as the final models, execution and retraining processes, with the aim of creating the final retraining and execution pipes that condense all the aforementioned processes.
-    - `09_Retraining script.ipynb`: Notebook to retrain the models with new data when necessary.
-    - `10_Execution script.ipynb`: Notebook to execute the final models and obtain the results.
-  - :file_folder: 03_System/app_risk_scoring_deployment
-    - This folder contains the files (app script, production script, models, ...) used in the deployment of the web application [Credit Risk Analyzer](https://03-notebooks03-systemapp-risk-scoring-deploymentapp-ri-cv1jfo.streamlitapp.com/).
-- :file_folder: 04_Models
-  - `pipe_execution_pd.pickle`: pipe that condenses the final probability of default (PD) trained model as well as all necessary prior data transformations.
-  - `pipe_execution_ead.pickle`: pipe that condenses the final exposure at default (EAD) trained model as well as all necessary prior data transformations.
-  - `pipe_execution_lgd.pickle`: pipe that condenses the final loss given default (LGD) trained model as well as all necessary prior data transformations.
-  - `pipe_training_pd.pickle`:  pipe that condenses the entire probability of default (PD) model training process. It can be used to retrain the model with new data when necessary.
-  - `pipe_training_ead.pickle`:  pipe that condenses the entire exposure at default (EAD) model training process. It can be used to retrain the model with new data when necessary.
-  - `pipe_training_lgd.pickle`:  pipe that condenses the entire loss given default (LGD) model training process. It can be used to retrain the model with new data when necessary.
-- :file_folder: 05_Results
-  - `execution script.py`: Python script to execute the models and obtain the results.
-  - `retraining script.py`: Python script to retrain the models with new data when necessary.
-  - `Credit_risk_analyzer_web_app_link.md`: Credit risk analyzer web app link.
 
 ## Instructions  <a name="instructions"></a>
 The project should be run using exactly the same environment in which it was created.
