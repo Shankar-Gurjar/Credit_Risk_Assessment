@@ -33,13 +33,14 @@ Once the probability of default, exposure at default and loss given default mode
 
 > EL($) = PD(%) · Principal($) · EAD(%) · LGD(%)
 
-<img src="/01_Documents/00_Images/3models.png" width="480" height="300" alt="centered image">
+<img width="487" alt="project_data" src="https://github.com/user-attachments/assets/b99c45a0-b8fa-43f9-a4ee-7e842d8787ae">
+
 
 Finally, in order to get the most value out of the developed machine learning model, a prototype web application has been designed so employees can start using them to make practical decisions. This web app collects, on the one hand, the internal data that the company has for each client and on the other hand, the information provided by the borrower itself through a loan application.
 
 [**Launch Credit Risk Analyzer Web App!**](https://03-notebooks03-systemapp-risk-scoring-deploymentapp-ri-cv1jfo.streamlitapp.com/)
 
-[![Esta es una imagen](/01_Documents/00_Images/webapp1.png)](https://03-notebooks03-systemapp-risk-scoring-deploymentapp-ri-cv1jfo.streamlitapp.com/)
+<img width="1018" alt="project_file1" src="https://github.com/user-attachments/assets/6331b400-f8c0-43ba-b342-e874eb2e0d3c">
 
 ### Business Insights derived from exploratory data analysis <a name="business-insights"></a>
 #### Borrowers:
